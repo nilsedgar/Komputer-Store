@@ -1,0 +1,59 @@
+header{
+    background-color: black;
+    color: antiquewhite;
+}
+.bank-work-section{
+    display: inline;
+    float: left;
+    width: 99%;
+}
+.bank-div{
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    width: 49%;
+    display: inline;
+    float: left;
+}
+.work-div{
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    width: 49%;
+    display: inline;
+    float: left;
+}
+.laptop-section{
+    display: inline;
+    float: left;
+    width: 99%;
+}
+.laptop-select-div{
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    width: 20%;
+}
+#image-display{
+   width: 200px;
+   height: 200px; 
+   display: inline;
+    float: left;
+}
+.laptop-info-div{
+    display: inline;
+    float: left;
+    width: 80%;
+}
+.laptop-info-list{
+    display: inline;
+    float: left;
+}
+ul{
+    display: inline;
+    float: left;
+}
+li{
+    display: inline;
+    float: left;
+}

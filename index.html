@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=style.css rel="stylesheet"/>
+    <title>Komputer-Store</title>
+</head>
+<body>
+    <header class="header">Komputer Store</header>
+<section class="bank-work-section">
+    <div class="bank-div">
+        <h1>Bank</h1>
+        <span>Balance:  </span><span id="balance">0</span><span>kr</span><br><br>       
+        <span>Loan:  </span><span id="outstanding-loan">0</span><span>kr</span><br><br>
+        <button id="get-a-loan" onclick="getALoan()" style="background-color: green; color: white;">Get a loan</button>
+    </div>
+    <div class="work-div">
+        <h1>Work</h1>
+        <span>Pay:  </span><span id="pay">0</span><span>kr</span><br><br>
+        <button id="work" onclick="work()" style="background-color: blue; color: white;">Work</button>
+        <button id="transfer-to-bank" onclick="transferToBank()" style="background-color: yellow;">Bank</button>
+        <button id="repay-loan-btn" onclick="repayLoan()" style="background-color: red;">Repay loan</button>
+    </div>
+</section>
+<section class="laptop-section">
+    <div class="laptop-select-div">
+        <h1>Laptop Select</h1>
+        <label for="laptop-list">Choose laptop</label>
+        <select name="laptop-list" id="laptop-list" onchange="getSelectedValue(this.value)">
+            <option>Choose</option>
+        </select>
+        <button id="buy-laptop-btn" onclick="buyLaptop()" style="background-color: pink;">Buy laptop</button>
+    </div>  
+    <div class="laptop-info-div">
+        <image id="image-display">
+            
+        </image>
+        <ul id="laptop-info-list" style="list-style-type: none">
+            <li id="selected-description"></li>
+            <li id="selected-price"></li>
+            <li id="selected-specs"></li>
+        </ul>
+    </div>
+</section>
+    <script src="app.js"></script>    
+</body>
+</html>
